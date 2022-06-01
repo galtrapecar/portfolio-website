@@ -2,25 +2,28 @@ let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 let elements = {
-    burgers :       document.querySelectorAll('.burger'),
-    hearts:         document.querySelector('.hearts'),
-    contents:       document.querySelector('.menu'),
-    exit:           document.querySelector('.exit'),
-    menu:           document.querySelector('.menu-wrap'),
-    insert:         document.querySelector('.insert'),
-    var:            document.querySelector('#var'),
-    clr:            document.querySelector('#clr2'),
-    clr2:           document.querySelector('.clr2'),
-    rot:            document.querySelector('#rot2'),
-    rotx:           document.querySelector('#rotx'),
-    roty:           document.querySelector('#roty'),
-    cube:           document.querySelector('#cube'),
-    cube_js:        document.querySelector('#cube_js'),
-    posx:           document.querySelector('#posx'),
-    posy:           document.querySelector('#posy'),
-    tiles:          document.querySelectorAll('.tile'),
-    wrapper:        document.querySelector('.wrapper'),
+    burgers :           document.querySelectorAll('.burger'),
+    hearts:             document.querySelector('.hearts'),
+    contents:           document.querySelector('.menu'),
+    exit:               document.querySelector('.exit'),
+    menu:               document.querySelector('.menu-wrap'),
+    insert:             document.querySelector('.insert'),
+    var:                document.querySelector('#var'),
+    clr:                document.querySelector('#clr2'),
+    clr2:               document.querySelector('.clr2'),
+    rot:                document.querySelector('#rot2'),
+    rotx:               document.querySelector('#rotx'),
+    roty:               document.querySelector('#roty'),
+    cube:               document.querySelector('#cube'),
+    cube_js:            document.querySelector('#cube_js'),
+    posx:               document.querySelector('#posx'),
+    posy:               document.querySelector('#posy'),
+    tiles:              document.querySelectorAll('.tile'),
+    wrapper:            document.querySelector('.wrapper'),
+    background_text:    document.querySelector('#background-text')
 }
+
+let show_bgs = document.querySelectorAll('.show-bg');
 
 let inserts = ['WEB DEVELOPER', 'PROGRAMMER', 'DESIGNER'];
 
@@ -145,6 +148,12 @@ elements.tiles.forEach(tile => {
     });
 });
 
+show_bgs.forEach(show_bg => {
+    show_bg.addEventListener('mouseenter', () => {
+        console.log(show_bg.innerText);
+    });
+});
+
 (() => {
 
     let top = window.innerHeight / 2;
@@ -233,25 +242,3 @@ window.onscroll = () => {
         elements.wrapper.parentElement.classList.remove('up');
     }
 }
-
-// window.onload = () => {
-
-//     elements.burgers.forEach(burger => {
-
-//         let i = 1;
-
-//         Array.from(burger.children).forEach(child => {
-//             if (child.classList.contains('bar')) {
-//                 setInterval(() => {
-//                     if (child.classList.contains('up')) {
-//                         child.classList.remove('up');
-//                     } else {
-//                         child.classList.add('up');
-//                     }
-//                 }, (burger.children.length / i) * 2000);
-//             }
-//             i++;
-//         });
-//     });
-
-// }
