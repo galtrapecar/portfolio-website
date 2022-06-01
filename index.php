@@ -58,12 +58,12 @@
             </div>
         </div>
 
-        <div class="menu-wrap show">
+        <div class="menu-wrap">
             <div class="contents-wrap">
                 <div class="exit">EXIT</div>
 
                 <div class="background">
-                    <div id="background-text">WEB DEV</div>
+                    <div id="background-text"></div>
                 </div>
 
                 <div class="center">
