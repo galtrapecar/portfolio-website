@@ -58,9 +58,22 @@
             </div>
         </div>
 
-        <div class="menu-wrap">
+        <div class="menu-wrap show">
             <div class="contents-wrap">
                 <div class="exit">EXIT</div>
+
+                <div class="background">
+                    <div id="background-text">WEB DEV</div>
+                </div>
+
+                <div class="center">
+                    <div class="show-bg">WEB DEVELOPMENT</div>
+                    <div class="show-bg">PROGRAMMING</div>
+                    <div class="show-bg">DESIGN</div>
+                    <div class="show-bg">PROJECTS</div>
+                    <div class="show-bg">FUN PROJECTS</div>
+                    <div class="show-bg">CONTACT ME</div>
+                </div>
             </div>
         </div>
     </div>
