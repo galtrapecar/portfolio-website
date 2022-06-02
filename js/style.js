@@ -148,12 +148,6 @@ elements.tiles.forEach(tile => {
     });
 });
 
-show_bgs.forEach(show_bg => {
-    show_bg.addEventListener('mouseenter', () => {
-        console.log(show_bg.innerText);
-    });
-});
-
 (() => {
 
     let top = window.innerHeight / 2;
@@ -241,4 +235,29 @@ window.onscroll = () => {
     } else {
         elements.wrapper.parentElement.classList.remove('up');
     }
+}
+
+// -----------------------------------------------------------------------------------------
+// CONTENTS BACKGROUND TEXT ANIMATIONS
+// -----------------------------------------------------------------------------------------
+
+show_bgs.forEach(show_bg => {
+    show_bg.addEventListener('mouseenter', () => {
+        contents_show_text(show_bg.innerText);
+    });
+
+    show_bg.addEventListener('mouseleave', () => {
+        contents_hide_text();
+    });
+});
+
+function contents_show_text(text) {
+    if (text == 'WEB DEVELOPMENT') text = 'WEB DEV';
+    if (text == 'PROGRAMMING') text = 'CODING';
+    elements.background_text.innerText = text;
+    elements.background_text.style.clipPath = 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)';
+}
+
+function contents_hide_text() {
+    elements.background_text.style.clipPath = 'polygon(0 0, 0 0, 0 100%, 0% 100%)';
 }
