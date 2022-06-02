@@ -116,7 +116,7 @@
         </div>
     </section>
 
-    <section class="next">
+    <section class="next" id="scrollflag-webdev">
         <div class="divider">
             <div class="text">
                 I'M GAL <br>
@@ -435,7 +435,7 @@
         </div>
     </section>
 
-    <section class="prog">
+    <section class="prog" id="scrollflag-coding">
         <div class="prog-inner">
 
             <div class="hook">PROGRAMMING</div>
@@ -635,7 +635,7 @@
         </div>
     </section>
 
-    <section class="design">
+    <section class="design" id="scrollflag-design">
 
         <div class="swiper swiper-numbers">
             <div class="swiper-wrapper">
@@ -677,7 +677,7 @@
         <div class="overlay"></div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="scrollflag-contact">
         <div class="inner">
             <div class="hook">Let's work together.</div>
             <div class="sliding-hook">
