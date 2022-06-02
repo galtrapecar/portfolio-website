@@ -313,7 +313,7 @@
                                             <div class="back"><div></div></div>
                                             <div class="topp"><div></div></div>
                                             <div class="bottomm"><div></div></div>
-                                            <div class="message"><div></div></div>
+                                            <div class="message"><div>SAY HELLO!</div></div>
                                         </div>
                                     </div>
 
