@@ -619,6 +619,53 @@ body {
         color: var(--clr-font);
     }
 
+    .next .web-dev .box .middle .cube-perspective .specs.php {
+        top: 140%;
+        left: 0;
+    }
+
+    .next .web-dev .box .middle .cube-perspective .specs .cube-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .next .web-dev .box .middle .cube-perspective .specs .cube-form label {
+        z-index: 999;
+        font-size: 1rem;
+    }
+
+    .next .web-dev .box .middle .cube-perspective .specs .cube-form input {
+        padding: 2px;
+        margin: 20px 0;
+    }
+
+    .next .web-dev .box .middle .cube-perspective .specs .cube-form button {
+        width: 70%;
+        height: 30px;
+        border: 2px solid var(--clr-hearts-0);
+        background-color: rgba(0, 0, 0, 0);
+        color: var(--clr-hearts-0);
+        font-weight: bold;
+        border-radius: 5px;
+        transition: .2s;
+        cursor: pointer;
+    }
+
+    .next .web-dev .box .middle .cube-perspective .specs .cube-form button:hover {
+        border: 2px solid var(--clr-hearts-3);
+        color: var(--clr-hearts-3);
+    }
+
+    .next .web-dev .box .middle .cube-perspective .cube .message > div {
+        font-size: 2rem;
+        color: #FFA8CA;
+        display: grid;
+        place-content: center;
+        animation: none;
+    }
+
     .next .web-dev .box .middle .cube-perspective .specs.js {
         top: calc(100% - 20px);
     }

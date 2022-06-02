@@ -313,8 +313,18 @@
                                             <div class="back"><div></div></div>
                                             <div class="topp"><div></div></div>
                                             <div class="bottomm"><div></div></div>
+                                            <div class="message"><div></div></div>
                                         </div>
                                     </div>
+
+                                    <div class="specs php">
+                                        <div class="cube-form">
+                                            <label for="cube-input">Leave a message!</label>
+                                            <input type="text" id="cube-input" maxlength="21">
+                                            <button id="cube-send">SEND</button>
+                                        </div>
+                                    </div>
+
                                 </div>
 
                                 <div class="desc">

@@ -280,3 +280,26 @@ function scroll_to_section(event) {
     
     setTimeout(() => { elements.menu.classList.remove('show') }, 50);
 }
+
+// -----------------------------------------------------------------------------------------
+// CUBE MESSAGE SEND METHOD
+// -----------------------------------------------------------------------------------------
+
+const cube_send_button = document.querySelector('#cube-send');
+const cube_input = document.querySelector('#cube-input');
+
+cube_send_button.addEventListener('click', cube_button_send_request);
+
+function cube_button_send_request() {
+    var xhr = new XMLHttpRequest();
+  
+    var url = './php/cube_message.php';
+    xhr.open("POST", url, true);
+
+    xhr.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText);
+        }
+    }
+    xhr.send();
+}
