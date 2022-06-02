@@ -249,6 +249,8 @@ show_bgs.forEach(show_bg => {
     show_bg.addEventListener('mouseleave', () => {
         contents_hide_text();
     });
+
+    show_bg.addEventListener('click', scroll_to_section);
 });
 
 function contents_show_text(text) {
@@ -260,4 +262,21 @@ function contents_show_text(text) {
 
 function contents_hide_text() {
     elements.background_text.style.clipPath = 'polygon(0 0, 0 0, 0 100%, 0% 100%)';
+}
+
+// -----------------------------------------------------------------------------------------
+// CONTENTS SCROLL LOGIC
+// -----------------------------------------------------------------------------------------
+
+function scroll_to_section(event) {
+    let clicked_elem = event.target;
+    let target_id = `#scrollflag-${clicked_elem.dataset.scrollflag}`;
+    let target = document.querySelector(target_id);
+    if (clicked_elem.dataset.scrollflag != 'contact') {
+        target.scrollIntoView();
+    } else {
+        target.scrollIntoView(false);
+    }
+    
+    setTimeout(() => { elements.menu.classList.remove('show') }, 50);
 }

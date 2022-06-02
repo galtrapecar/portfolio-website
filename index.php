@@ -49,13 +49,13 @@
                 </div>
             </div>
 
-            <div class="about fade">
+            <!-- <div class="about fade">
                 <div class="circle">
                     <span>ABOUT</span>
                 </div>
 
                 <img src="./svg/ring.svg" alt="">
-            </div>
+            </div> -->
         </div>
 
         <div class="menu-wrap">
@@ -67,12 +67,12 @@
                 </div>
 
                 <div class="center">
-                    <div class="show-bg">WEB DEVELOPMENT</div>
-                    <div class="show-bg">PROGRAMMING</div>
-                    <div class="show-bg">DESIGN</div>
-                    <div class="show-bg">PROJECTS</div>
-                    <div class="show-bg">FUN PROJECTS</div>
-                    <div class="show-bg">CONTACT ME</div>
+                    <div class="show-bg" data-scrollflag="webdev">WEB DEVELOPMENT</div>
+                    <div class="show-bg" data-scrollflag="coding">PROGRAMMING</div>
+                    <div class="show-bg" data-scrollflag="design">DESIGN</div>
+                    <div class="show-bg" data-scrollflag="projects">PROJECTS</div>
+                    <div class="show-bg" data-scrollflag="fprojects">FUN PROJECTS</div>
+                    <div class="show-bg" data-scrollflag="contact">CONTACT ME</div>
                 </div>
             </div>
         </div>
@@ -116,7 +116,7 @@
         </div>
     </section>
 
-    <section class="next" id="scrollflag-webdev">
+    <section class="next">
         <div class="divider">
             <div class="text">
                 I'M GAL <br>
@@ -124,7 +124,7 @@
             </div>
         </div>
 
-        <div class="web-dev">
+        <div class="web-dev" id="scrollflag-webdev">
             <div class="hook">
                 WEB <br>
                 DEV
