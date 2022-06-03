@@ -666,12 +666,13 @@ body {
 
     .next .web-dev .box .middle .cube-perspective .specs .cube-form label {
         z-index: 999;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .next .web-dev .box .middle .cube-perspective .specs .cube-form input {
         padding: 2px;
-        margin: 20px 0;
+        margin: 15px 0;
+        margin-top: 5px;
     }
 
     .next .web-dev .box .middle .cube-perspective .specs .cube-form button {
@@ -697,6 +698,7 @@ body {
         display: grid;
         place-content: center;
         animation: none;
+        text-align: center;
     }
 
     .next .web-dev .box .middle .cube-perspective .specs.js {

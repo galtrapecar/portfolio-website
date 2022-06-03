@@ -313,7 +313,7 @@
                                             <div class="back"><div></div></div>
                                             <div class="topp"><div></div></div>
                                             <div class="bottomm"><div></div></div>
-                                            <div class="message"><div>SAY HELLO!</div></div>
+                                            <div class="message"><div id="cube-message">SAY HELLO!</div></div>
                                         </div>
                                     </div>
 
@@ -332,7 +332,12 @@
                                         <p>Many websites and web applications make use of PHP, and coupled with SQL you can do a lot.</p>
                                     
                                         <div class="exp">
-                                            <div>Half a year of learning</div>
+                                            <div>Half a year of learning PHP and SQL</div>
+                                            <div>PHP syntax and basics</div>
+                                            <div>REST requests / Ajax calls</div>
+                                            <div>SQL syntax and basics</div>
+                                            <div>MySQL database management</div>
+                                            <div>NoSQL databases</div>
                                         </div>
                                     
                                     </div>
@@ -349,6 +354,9 @@
                         </div>
 
                         <div class="swiper-slide">
+
+                            <div class="commingsoon" style="width: 100%; height: 100%; text-align: center; color: var(--clr-font); font-size: 3rem; display: grid; place-content: center;">COMMING SOON!</div>
+
                             <div class="bottom">
                                 <div class="bar"></div>
                                 <div class="text">

@@ -287,19 +287,45 @@ function scroll_to_section(event) {
 
 const cube_send_button = document.querySelector('#cube-send');
 const cube_input = document.querySelector('#cube-input');
+const cube_message = document.querySelector('#cube-message');
 
-cube_send_button.addEventListener('click', cube_button_send_request);
+cube_send_button.addEventListener('click', cube_button_send_message);
 
-function cube_button_send_request() {
-    var xhr = new XMLHttpRequest();
+function cube_get_last_message() {
+    let xhr = new XMLHttpRequest();
   
-    var url = './php/cube_message.php';
-    xhr.open("POST", url, true);
+    let url = './php/cube_message.php?message=true';
+    xhr.open("GET", url, true);
 
     xhr.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            console.log(this.responseText);
+            cube_set_last_message(this.responseText);
         }
     }
     xhr.send();
 }
+
+function cube_set_last_message(message) {
+    cube_message.innerHTML = message;
+}
+
+function cube_button_send_message() {
+    let message = cube_input.value;
+    if (message.length == 0) return;
+    let xhr = new XMLHttpRequest();
+    let url = './php/cube_message.php';
+    let data = `message=${message}`;
+    xhr.open("POST", url, true);
+
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+    xhr.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText);
+            window.location.reload();
+        }
+    }
+    xhr.send(data);
+}
+
+cube_get_last_message();
