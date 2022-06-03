@@ -172,17 +172,28 @@ body {
         width: 23px;
         height: 23px;
         border-radius: 50%;
-        background-color: var(--clr-font);
-        margin-bottom: 14px;
-    }
-
-    .GUI .circles .circle:nth-child(1) {
         background-color: rgba(0, 0, 0, 0);
+        margin-bottom: 14px;
+        display: grid;
+        place-content: center;
     }
 
     .GUI .circles .circle svg {
         position: relative;
         fill: var(--clr-font);
+    }
+
+    .GUI .circles .circle img {
+        place-self: center;
+        width: 70%;
+    }
+
+    .GUI #mail-fill {
+        fill: var(--clr-font);
+    }
+
+    .GUI #mailicon-fill {
+        fill: var(--clr-font-accent);
     }
 
     .GUI .circles .circle::after {
