@@ -164,6 +164,7 @@ body {
         display: flex;
         flex-direction: column;
         transition: .5s;
+        pointer-events: all;
     }
 
     .GUI .circles .circle {
@@ -173,6 +174,27 @@ body {
         border-radius: 50%;
         background-color: var(--clr-font);
         margin-bottom: 14px;
+    }
+
+    .GUI .circles .circle:nth-child(1) {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .GUI .circles .circle svg {
+        position: relative;
+        fill: var(--clr-font);
+    }
+
+    .GUI .circles .circle::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        cursor: pointer;
     }
 
     .GUI .about {
