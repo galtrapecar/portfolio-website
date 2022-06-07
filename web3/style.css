@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    background-color: var(--clr-bg-dark);
+    background-color: var(--clr-bg-darker);
     overflow-x: hidden;
 }
 
@@ -50,14 +50,29 @@ body {
     left: 0;
     z-index: 9999;
     width: 100%;
-    height: 60px;
-    border-bottom: 2px solid var(--clr-hearts-3);
     display: grid;
     place-content: center;
     grid-template-columns: 1fr 10fr 1fr;
 }
 
-.navbar > div {
+.navbar .logo {
+    width: 300px;
+}
+
+.navbar .logo.oe {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 100%;
+}
+
+.menu > div {
     color: var(--clr-hearts-3);
     text-align: center;
 }

@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+
     <div class="navbar">
+        <img src="./svg/logo_tkn.svg" alt="" class="logo tkn">
+        <img src="./svg/logo_oe.svg" alt="" class="logo oe">
+    </div>
+    
+    <div class="menu">
         <div class="balance">BALANCE: </div>
         <div class="account"></div>
         <div class="import">IMPORT</div>
@@ -37,5 +42,6 @@
     </section>
 
     <script src="./index.js"></script>
+    <script src="./neon.js"></script>
 </body>
 </html>
