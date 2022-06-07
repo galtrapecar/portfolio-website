@@ -239,6 +239,7 @@ function startApp(ethereum) {
     }
 
     function button_prompt_connect() {
+        button_hide_load()
         btn_top.innerText = 'Connect to MetaMask';
         btn.addEventListener('click', app_connect);
     }
